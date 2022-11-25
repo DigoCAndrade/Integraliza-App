@@ -1,0 +1,64 @@
+.card {
+    position: relative;
+    background-image: url("../assets/Credit Card.png");
+    background-size: cover;
+    height: 264px;
+    width: 418px;
+}
+
+@media (max-width: 992px) {
+    .card{
+        width: 314px;
+        height: 198px;
+        overflow: hidden;
+    }
+
+    .number {
+        top: 90px !important;
+        left: 120px !important;
+        font-size: 1rem !important;
+    }
+
+    .name {
+        top: 160px !important;
+        left: 170px !important;
+        font-size: 1rem !important;
+    }
+
+    .expiry {
+        top: 165px !important;
+        left: 205px !important;
+        font-size: 1rem !important;
+    }
+}
+
+.number {
+    color: white;
+    font-size: 1.2rem;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 110px;
+    left: 130px;
+    text-align: start;
+    width: 200px;
+}
+
+.name {
+    color: white;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 210px;
+    left: 180px;
+    width: 300px;
+    font-size: 1.2rem;
+}
+
+.expiry {
+    color: white;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 215px;
+    left: 270px;
+    width: 45px;
+    font-size: 1.2rem;
+}

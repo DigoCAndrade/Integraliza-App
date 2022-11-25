@@ -1,0 +1,9 @@
+.userImage {
+    min-height: 64px;
+    min-width: 64px;
+    max-width: 92px;
+    max-height: 92px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

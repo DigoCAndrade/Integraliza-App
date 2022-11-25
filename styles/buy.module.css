@@ -1,0 +1,24 @@
+@media (max-width: 992px) {
+    .preview, .preview * {
+        visibility: hidden !important;
+        position: center !important;
+    }
+}
+
+.preview {
+    height: 600px;
+    width: 500px;
+    left: 7.5%;
+    transform: translateY(-50%);
+    top: 52.5% !important;
+}
+
+.document {
+    background-color: #f8f8f8;
+    border: #6c757d 1px solid;
+    height: 374px;
+    width: 265px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+}

@@ -1,0 +1,31 @@
+{
+  "name": "impress",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@nextui-org/react": "^1.0.0-beta.10",
+    "bootstrap": "^5.2.1",
+    "bootstrap-icons": "^1.9.1",
+    "crypto": "^1.0.1",
+    "jsonwebtoken": "^8.5.1",
+    "next": "12.3.1",
+    "nookies": "^2.5.2",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-hook-form": "^7.36.1",
+    "serverless-mysql": "^1.5.4"
+  },
+  "devDependencies": {
+    "@types/cookie": "^0.5.1",
+    "@types/node": "18.8.3",
+    "@types/react": "18.0.21",
+    "eslint": "8.23.1",
+    "eslint-config-next": "12.3.1"
+  }
+}

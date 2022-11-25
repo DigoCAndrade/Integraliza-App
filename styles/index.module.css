@@ -1,0 +1,50 @@
+.mainArea {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 85vh;
+    min-height: 500px;
+}
+
+.mainTitle {
+    font-size: 3.5em !important;
+}
+
+.mainText {
+    font-size: 1.3em !important;
+}
+
+.mainImage {
+    height: auto;
+    max-width: 35%;
+    min-width: 384px;
+}
+
+@media (max-width: 992px) {
+    .planetImage, .planetImage * {
+        visibility: hidden !important;
+        position: absolute !important;
+    }
+}
+
+.planetImage {
+    background-image: url("../assets/main-image.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: auto;
+    min-height: 400px;
+}
+
+.line {
+    height: 30px;
+    width: 1px;
+    background-color: black;
+    border-radius: 5px;
+}
+
+.square {
+    bottom: 70%;
+    left: -1%;
+}

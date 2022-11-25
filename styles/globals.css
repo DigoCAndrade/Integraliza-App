@@ -1,0 +1,132 @@
+@font-face {
+    font-family: 'SF-Pro-Bold';
+    src: url('../assets/SFPRODISPLAYBOLD.OTF');
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'SF-Pro';
+    src: url('../assets/SFPRODISPLAYMEDIUM.OTF');
+}
+
+@font-face {
+    font-family: 'SF-Pro-Light';
+    src: url('../assets/SFPRODISPLAYREGULAR.OTF');
+}
+
+html,
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+* {
+    font-family: 'SF-Pro-Light', sans-serif;
+}
+
+.SF-Pro-Bold {
+    font-family: 'SF-Pro-Bold', sans-serif !important;
+}
+
+.SF-Pro {
+    font-family: 'SF-Pro', sans-serif !important;
+}
+
+.SF-Pro-Light {
+    font-family: 'SF-Pro-Light', sans-serif !important;
+}
+
+::placeholder, :-ms-input-placeholder, ::-ms-input-placeholder {
+    color: #6c757d;
+    opacity: 1;
+}
+
+@media (min-width: 768px) {
+    .dropdown-menu-md-center {
+        right: auto !important;
+        left: 50% !important;
+        -webkit-transform: translate(-50%, 0) !important;
+        -o-transform: translate(-50%, 0) !important;
+        transform: translate(-50%, 0) !important;
+    }
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+::-webkit-scrollbar {
+    width: 6px;
+    background-color: #d8d8d8;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #b8b8b8;
+    border-radius: 5px;
+}
+
+input[type="radio"]:checked + label {
+    transition: none;
+    box-sizing: border-box !important;
+    border-color: #0275d8 !important;
+}
+
+input[type="radio"]:focus + label {
+    border-width: 0.13em !important;
+}
+
+input[type="radio"] + label:hover {
+    transition: ease-in-out 0.2s;
+    border-color: rgba(26, 26, 26, 0.6) !important;
+}
+
+input[type="radio"]:checked + label:hover {
+    transition: none;
+    border-color: #0275d8 !important;
+}
+
+.color-gradient {
+    background: rgb(131,58,180);
+    background-image: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgb(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+
+Link, a{
+    cursor: pointer;
+}
+
+.expandImage {
+    animation: expandImage 500ms linear;
+}
+
+@keyframes expandImage {
+    from {
+        opacity: 0;
+        transform: scale(0.1);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.expandText {
+    animation: expandText 1s linear;
+}
+
+@keyframes expandText {
+    0%, 75% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
