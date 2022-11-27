@@ -6,18 +6,14 @@ export async function hashPassword({email, password}) {
     return crypto.pbkdf2Sync(password, email, 1000, 64, 'sha512').toString('hex')
 }
 
-export async function validPassword({password}) {
-    if (password.length < 8) return false;
-    if (!new RegExp('[^0-9]').test(password)) return false;
-}
-
-export async function createUser({email, password, firstname, lastname, state, birthdate}) {
+export async function createUser({firstname, lastname, cpf, email, password}) {
     try {
         const result = await executeQuery({
-            query: 'INSERT INTO users (email, password, firstname, lastname, state, birthdate) VALUES (?, ?, ?, ?, ?, ?)',
-            values: [email, password, firstname, lastname, state, birthdate],
+            query: 'INSERT INTO users (firstname, lastname, cpf, email, password) VALUES (?, ?, ?, ?, ?)',
+            values: [firstname, lastname, cpf, email, password],
         })
-        if (result != null) return true
+
+        return (result['error'] == null)
     }catch (error) {
         console.log(error)
         return false
