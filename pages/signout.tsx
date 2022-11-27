@@ -172,9 +172,9 @@ function Signout({token}) {
                                     confirmPassword: values['confirmPassword']
                                 })
                             }}
-                            status={(firstnameHelper.color == "success") ? "success" : "error"}
-                            color={(firstnameHelper.color == "success") ? "success" : "error"}
-                            helperColor={(firstnameHelper.color == "success") ? "success" : "error"}
+                            status={(firstnameHelper.error == null) ? "default" : (firstnameHelper.error) ? "error" : "success"}
+                            color={(firstnameHelper.error == null) ? "default" : (firstnameHelper.error) ? "error" : "success"}
+                            helperColor={(firstnameHelper.error == null) ? "default" : (firstnameHelper.error) ? "error" : "success"}
                             helperText={firstnameHelper.text}
                             type="text"
                             size='lg'
@@ -199,9 +199,9 @@ function Signout({token}) {
                                     confirmPassword: values['confirmPassword']
                                 })
                             }}
-                            status={(lastnameHelper.color == "success") ? "success" : "error"}
-                            color={(lastnameHelper.color == "success") ? "success" : "error"}
-                            helperColor={(lastnameHelper.color == "success") ? "success" : "error"}
+                            status={(lastnameHelper.error == null) ? "default" : (firstnameHelper.error) ? "error" : "success"}
+                            color={(lastnameHelper.error == null) ? "default" : (firstnameHelper.error) ? "error" : "success"}
+                            helperColor={(lastnameHelper.error == null) ? "default" : (firstnameHelper.error) ? "error" : "success"}
                             helperText={lastnameHelper.text}
                             type="text"
                             size='lg'
@@ -227,9 +227,9 @@ function Signout({token}) {
                                 confirmPassword: values['confirmPassword']
                             })
                         }}
-                        status={(cpfHelper.color == "success") ? "success" : "error"}
-                        color={(cpfHelper.color == "success") ? "success" : "error"}
-                        helperColor={(cpfHelper.color == "success") ? "success" : "error"}
+                        status={(cpfHelper.error == null) ? "default" : (cpfHelper.error) ? "error" : "success"}
+                        color={(cpfHelper.error == null) ? "default" : (cpfHelper.error) ? "error" : "success"}
+                        helperColor={(cpfHelper.error == null) ? "default" : (cpfHelper.error) ? "error" : "success"}
                         helperText={cpfHelper.text}
                         type="text"
                         size='lg'
@@ -256,9 +256,9 @@ function Signout({token}) {
                                 confirmPassword: values['confirmPassword']
                             })
                         }}
-                        status={(emailHelper.color == "success") ? "success" : "error"}
-                        color={(emailHelper.color == "success") ? "success" : "error"}
-                        helperColor={(emailHelper.color == "success") ? "success" : "error"}
+                        status={(emailHelper.error == null) ? "default" : (emailHelper.error) ? "error" : "success"}
+                        color={(emailHelper.error == null) ? "default" : (emailHelper.error) ? "error" : "success"}
+                        helperColor={(emailHelper.error == null) ? "default" : (emailHelper.error) ? "error" : "success"}
                         helperText={emailHelper.text}
                         type="email"
                         size='lg'
@@ -283,9 +283,9 @@ function Signout({token}) {
                                 confirmPassword: values['confirmPassword']
                             })
                         }}
-                        status={(passwordHelper.color == "success") ? "success" : "error"}
-                        color={(passwordHelper.color == "success") ? "success" : "error"}
-                        helperColor={(passwordHelper.color == "success") ? "success" : "error"}
+                        status={(passwordHelper.error == null) ? "default" : (passwordHelper.error) ? "error" : "success"}
+                        color={(passwordHelper.error == null) ? "default" : (passwordHelper.error) ? "error" : "success"}
+                        helperColor={(passwordHelper.error == null) ? "default" : (passwordHelper.error) ? "error" : "success"}
                         helperText={passwordHelper.text}
                         type="password"
                         size='lg'
@@ -310,9 +310,9 @@ function Signout({token}) {
                                 confirmPassword: event.target.value
                             })
                         }}
-                        status={(confirmHelper.color == "success") ? "success" : "error"}
-                        color={(confirmHelper.color == "success") ? "success" : "error"}
-                        helperColor={(confirmHelper.color == "success") ? "success" : "error"}
+                        status={(confirmHelper.error == null) ? "default" : (confirmHelper.error) ? "error" : "success"}
+                        color={(confirmHelper.error == null) ? "default" : (confirmHelper.error) ? "error" : "success"}
+                        helperColor={(confirmHelper.error == null) ? "default" : (confirmHelper.error) ? "error" : "success"}
                         helperText={confirmHelper.text}
                         type="password"
                         size='lg'

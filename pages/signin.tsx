@@ -126,9 +126,9 @@ function Signin({token}) {
                             }
                             }
                             onClearClick={emailReset}
-                            status={(emailHelper.color == "success") ? "success" : "error"}
-                            color={(emailHelper.color == "success") ? "success" : "error"}
-                            helperColor={(emailHelper.color == "success") ? "success" : "error"}
+                            status={(emailHelper.error == null) ? "default" : (emailHelper.error) ? "error" : "success"}
+                            color={(emailHelper.error == null) ? "default" : (emailHelper.error) ? "error" : "success"}
+                            helperColor={(emailHelper.error == null) ? "default" : (emailHelper.error) ? "error" : "success"}
                             helperText={emailHelper.text}
                             type="email"
                             size='lg'
@@ -145,10 +145,10 @@ function Signin({token}) {
                             onChange={(e) => {
                                 setValues({email: values['email'], password: e.target.value})
                             }}
-                            onClearClick={emailReset}
-                            status={(passwordHelper.color == "success") ? "success" : "error"}
-                            color={(passwordHelper.color == "success") ? "success" : "error"}
-                            helperColor={(passwordHelper.color == "success") ? "success" : "error"}
+                            onClearClick={passwordReset}
+                            status={(passwordHelper.error == null) ? "default" : (passwordHelper.error) ? "error" : "success"}
+                            color={(passwordHelper.error == null) ? "default" : (passwordHelper.error) ? "error" : "success"}
+                            helperColor={(passwordHelper.error == null) ? "default" : (passwordHelper.error) ? "error" : "success"}
                             helperText={passwordHelper.text}
                             type="password"
                             size='lg'

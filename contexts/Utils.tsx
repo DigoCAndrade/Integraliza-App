@@ -1,6 +1,12 @@
 import jwt from 'jsonwebtoken';
 import React from "react";
 
+export declare const defaultProps: {
+    color: "default" | "primary" | "secondary" | "success" | "warning" | "error";
+    helperColor: "default" | "primary" | "secondary" | "success" | "warning" | "error";
+    status: "default" | "primary" | "secondary" | "success" | "warning" | "error";
+}
+
 export function parseInformation(token) {
     if (!token) return [false, null, null]
     const data = jwt.decode(token)
@@ -38,13 +44,13 @@ export function helper({value, validator, successMessage, errorMessage}) {
     if (!value)
         return {
             text: "",
-            color: "",
+            error: null
         };
 
     const isValidPassword = validator(value);
 
     return {
         text: isValidPassword ? successMessage : errorMessage,
-        color: isValidPassword ? "success" : "error",
+        error: !isValidPassword,
     };
 }
