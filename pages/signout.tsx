@@ -199,9 +199,9 @@ function Signout({token}) {
                                     confirmPassword: values['confirmPassword']
                                 })
                             }}
-                            status={(lastnameHelper.error == null) ? "default" : (firstnameHelper.error) ? "error" : "success"}
-                            color={(lastnameHelper.error == null) ? "default" : (firstnameHelper.error) ? "error" : "success"}
-                            helperColor={(lastnameHelper.error == null) ? "default" : (firstnameHelper.error) ? "error" : "success"}
+                            status={(lastnameHelper.error == null) ? "default" : (lastnameHelper.error) ? "error" : "success"}
+                            color={(lastnameHelper.error == null) ? "default" : (lastnameHelper.error) ? "error" : "success"}
+                            helperColor={(lastnameHelper.error == null) ? "default" : (lastnameHelper.error) ? "error" : "success"}
                             helperText={lastnameHelper.text}
                             type="text"
                             size='lg'
